@@ -1,0 +1,24 @@
+<table class="table table-bordered mt-5">
+    <tr>
+        <th scope="col">Name</th>
+        <th scope="col">Photo Profile</th>
+        <th scope="col">Age</th>
+        <th scope="col">Phone Number</th>
+    </tr>
+    <tbody>
+        <% users.map((user)=> { %>
+            <tr>
+                <td>
+                    <%= user.firstName %>
+                </td>
+                <td><img src="<%= user.photoProfile %>" width="300" class="img-fluid" alt=""></td>
+                <td>
+                    <%= user.age %>
+                </td>
+                <td>
+                    <%= user.phoneNumber %>
+                </td>
+            </tr>
+            <% }) %>
+    </tbody>
+</table>
